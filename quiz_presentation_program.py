@@ -1,5 +1,6 @@
 import sys
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QLabel, QPushButton, QWidget, QStackedWidget, QGridLayout, QLineEdit, QHBoxLayout, QFileDialog, QSpinBox, QSlider, QComboBox)
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QLabel, QPushButton, QWidget, QStackedWidget,
+                             QGridLayout, QLineEdit, QHBoxLayout, QFileDialog, QComboBox)
 from PyQt5.QtCore import Qt
 
 class QuizPresentation(QMainWindow):
