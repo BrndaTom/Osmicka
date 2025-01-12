@@ -189,8 +189,15 @@ class QuizPresentation(QMainWindow):
         if slide["type"] == "text":
             self.label.setText(slide["content"])
 
-    def next_slide(self):
-        self.current_slide
+        def next_slide(self):
+            if self.current_slide < len(self.slides) - 1:
+                self.current_slide += 1
+                self.show_slide()
+
+    def previous_slide(self):
+        if self.current_slide > 0:
+            self.current_slide -= 1
+            self.show_slide()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
